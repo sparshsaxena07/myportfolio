@@ -1,10 +1,33 @@
 @import "tailwindcss";
 
 :root {
-  --background: #000000;
-  --foreground: #ffffff;
-  --border-charcoal: #1a1a1a;
-  --border-charcoal-light: #262626;
+  /* Default: Light Theme */
+  --background: #FAFAFA;
+  --card-bg: #FFFFFF;
+  --text-primary: #111827;
+  --text-secondary: #6B7280;
+  --border-subtle: #E5E7EB;
+  --accent-primary: #2563EB;
+
+  /* Legacy variables mappings for compatibility */
+  --foreground: var(--text-primary);
+  --border-charcoal: var(--border-subtle);
+  --border-charcoal-light: var(--border-subtle);
+}
+
+html.dark {
+  /* Dark Theme */
+  --background: #050505;
+  --card-bg: #111111;
+  --text-primary: #F8FAFC;
+  --text-secondary: #9CA3AF;
+  --border-subtle: #262626;
+  --accent-primary: #3B82F6;
+
+  /* Legacy variables mappings for compatibility */
+  --foreground: var(--text-primary);
+  --border-charcoal: var(--border-subtle);
+  --border-charcoal-light: var(--border-subtle);
 }
 
 @theme inline {
@@ -12,16 +35,31 @@
   --color-foreground: var(--foreground);
   --color-charcoal-border: var(--border-charcoal);
   --color-charcoal-border-light: var(--border-charcoal-light);
+  
+  /* Modern design token mapping */
+  --color-card-bg: var(--card-bg);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-border-subtle: var(--border-subtle);
+  --color-accent-primary: var(--accent-primary);
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
 body {
   background-color: var(--background);
-  color: var(--foreground);
+  color: var(--text-primary);
   font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
   margin: 0;
   padding: 0;
+}
+
+/* Smooth theme transitions across the site */
+html, body, main, nav, section, div, h1, h2, h3, p, span, a, button, input, textarea {
+  transition-property: color, background-color, border-color, stroke, fill, box-shadow;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -34,4 +72,3 @@ html {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
-
