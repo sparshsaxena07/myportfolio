@@ -781,7 +781,7 @@ export default function Home() {
                 Automating pipeline workflows and orchestrating container environments.
               </p>
               <div className="flex flex-wrap gap-1.5 mt-auto pt-2">
-                {["Docker", "Git", "GitHub Actions", "CI/CD Pipelines", "Vercel", "Render", "Postman"].map((tech) => (
+                {["Docker", "Git", "GitHub Actions", "Vercel"].map((tech) => (
                   <span
                     key={tech}
                     className="px-2.5 py-1 rounded-md border border-border-subtle bg-transparent text-text-secondary text-[10px] font-mono tracking-wider transition-all duration-300 hover:border-accent-primary hover:text-text-primary"
@@ -966,9 +966,9 @@ export default function Home() {
                   </div>
                   <div className="h-px bg-border-subtle" />
                   <div className="flex flex-col gap-1">
-                    <span className="text-[10px] font-mono text-text-secondary uppercase tracking-wider">Focus</span>
-                    <span className="text-text-primary font-medium text-sm">Rapid Prototyping</span>
-                    <span className="text-text-secondary text-xs font-mono">Full-stack · Collaborative</span>
+                    <span className="text-[10px] font-mono text-text-secondary uppercase tracking-wider">Event</span>
+                    <span className="text-text-primary font-medium text-sm">Smart India Hackathon (SIH)</span>
+                    <span className="text-text-secondary text-xs font-mono">Winner</span>
                   </div>
                 </div>
               </div>
@@ -984,18 +984,12 @@ export default function Home() {
                     Technical Assessments
                   </h3>
                   <p className="text-text-secondary text-sm sm:text-base font-light leading-relaxed max-w-lg">
-                    Qualifying for the Infosys Specialist Programmer L2 interview pipeline required demonstrating advanced algorithmic proficiency across dynamic programming, graph theory, and data structure design. These standardised assessments reflect the ability to solve structured engineering problems at a high level of precision and under examination conditions.
+                    Qualifying for the Infosys Specialist Programmer interview pipeline by clearing 2 rounds of HackWithInfy required demonstrating advanced algorithmic proficiency across dynamic programming, graph theory, and data structure design. These standardised assessments reflect the ability to solve structured engineering problems at a high level of precision and under examination conditions.
                   </p>
                 </div>
 
                 {/* Right: Supporting data */}
                 <div className="md:col-span-2 flex flex-col gap-5 md:border-l border-border-subtle md:pl-10">
-                  <div className="flex flex-col gap-1">
-                    <span className="text-[10px] font-mono text-text-secondary uppercase tracking-wider">Credential</span>
-                    <span className="text-text-primary font-medium text-sm">Specialist Programmer · L2</span>
-                    <span className="text-text-secondary text-xs font-mono">Infosys</span>
-                  </div>
-                  <div className="h-px bg-border-subtle" />
                   <div className="flex flex-col gap-1">
                     <span className="text-[10px] font-mono text-text-secondary uppercase tracking-wider">Assessment Areas</span>
                     <span className="text-text-primary font-medium text-sm">Advanced Algorithms</span>
@@ -1005,7 +999,7 @@ export default function Home() {
                   <div className="flex flex-col gap-1">
                     <span className="text-[10px] font-mono text-text-secondary uppercase tracking-wider">Track</span>
                     <span className="text-text-primary font-medium text-sm">Interview Pipeline</span>
-                    <span className="text-text-secondary text-xs font-mono">Qualified · L2 criteria</span>
+                    <span className="text-text-secondary text-xs font-mono">Qualified 2 Rounds of HackWithInfy</span>
                   </div>
                 </div>
               </div>
